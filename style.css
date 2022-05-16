@@ -875,7 +875,10 @@ body {
   width: 180px; }
 
 .swiper-container {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
 
 .swiper-pagination {
   position: absolute;
@@ -886,6 +889,12 @@ body {
   height: 12px;
   background-color: #B5B6BC; }
 
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
 .main__equipments {
   display: flex;
   width: 100%;
